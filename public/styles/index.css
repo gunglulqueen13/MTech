@@ -1,0 +1,102 @@
+/* Импортируем шрифты */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Обнуление стилей браузера по умолчанию */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Основные стили проекта */
+
+div#app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
+
+.field__border-purple {
+    border: 1px solid #b19cd9;
+}
+
+.field__input {
+    color: #121212;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.field__input::placeholder {
+    color: grey;
+}
+
+.cancel {
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.cancel:hover {
+    background-color: #f7f6f6;
+    opacity: 0.5;
+}
+
+.creation {
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+.creation:hover {
+    background-color: #7B68EE;
+    opacity: 0.5;
+}
